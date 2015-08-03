@@ -18,7 +18,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>b7669f1a65af852d3637f5a76b8cc8ecada6387f</upstream.version>
+        <upstream.version>9f96c74d66d53f65a98e8cad222cef301c1055b6</upstream.version>
         <upstream.url>https://github.com/mikekelly/hal-browser/archive/${upstream.version}.zip</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}
         </destDir>
