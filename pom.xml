@@ -11,14 +11,14 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>hal-browser</artifactId>
-    <version>0-SNAPSHOT</version>
+    <version>7b01d5c-SNAPSHOT</version>
     <name>HAL Browser</name>
     <description>WebJar for HAL Browser</description>
     <url>http://webjars.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>9f96c74d66d53f65a98e8cad222cef301c1055b6</upstream.version>
+        <upstream.version>7b01d5c6d1bb411d1aa0b83504bd32d155f2bd23</upstream.version>
         <upstream.url>https://github.com/mikekelly/hal-browser/archive/${upstream.version}.zip</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}
         </destDir>
@@ -67,7 +67,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/hal-browser-${upstream.version}" />
+                                    <fileset dir="${project.build.directory}/hal-browser-${upstream.version}" excludes="vendor/"/>
                                 </move>
                             </target>
                         </configuration>
