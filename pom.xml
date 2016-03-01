@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>hal-browser</artifactId>
-    <version>7b01d5c-1-SNAPSHOT</version>
+    <version>7b01d5c-1</version>
     <name>HAL Browser</name>
     <description>WebJar for HAL Browser</description>
     <url>http://webjars.org</url>
@@ -44,7 +44,7 @@
         <url>https://github.com/webjars/hal-browser</url>
         <connection>scm:git:https://github.com/webjars/hal-browser.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/hal-browser.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>hal-browser-7b01d5c-1</tag>
     </scm>
 
     <build>
@@ -67,7 +67,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/hal-browser-${upstream.version}"/>
+                                    <fileset dir="${project.build.directory}/hal-browser-${upstream.version}" />
                                 </move>
                             </target>
                         </configuration>
